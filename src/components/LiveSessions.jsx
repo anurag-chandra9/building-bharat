@@ -1,6 +1,6 @@
 import { Users } from "lucide-react";
 
-const sessionImg = "/path-to-your-uploaded-image.jpeg"; // Replace with actual image path
+const sessionImg = "https://as2.ftcdn.net/jpg/05/40/23/99/1000_F_540239926_4VPbVHUSfnMXiZ5L03YNlaVuwynrfMdP.jpg"; // Replace with actual image path
 
 export default function LiveSessions() {
   return (
@@ -34,10 +34,8 @@ export default function LiveSessions() {
             </div>
 
             {/* Description with aligned icon */}
-            <p className="text-gray-700 text-base leading-relaxed mb-8 text-left px-5">
-  Learn directly from policy experts, former MPs, senior bureaucrats, and successful political consultants through live, interactive sessions that simulate real-world scenarios.
-</p>
-
+<p className="text-gray-700 text-base leading-relaxed mb-8 text-left px-5">           Learn directly from policy experts, former MPs, senior bureaucrats, and successful political consultants through live, interactive sessions that simulate real-world scenarios.
+            </p>
 
             {/* Bullet List */}
             <ul className="space-y-3 text-green-800 text-sm sm:text-base">

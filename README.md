@@ -1,12 +1,76 @@
-# React + Vite
+# Building Bharat React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern React application for Building Bharat, featuring:
 
-Currently, two official plugins are available:
+- Animated hero section with orbiting icons
+- Responsive navigation bar
+- Modular component structure
+- Tailwind CSS for styling
+- React Router for navigation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Hero Section:** Animated orbit of icons around a central "Building Bharat" logo.
+- **Stories:** Inspiring testimonials.
+- **Initiative For:** Cards for different user groups.
+- **Live Sessions:** Details about live interactive sessions.
+- **Responsive Navbar:** Simple navigation matching available routes.
+- **Routing:** All main sections are accessible via routes.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+3. **Open your browser:**
+   Visit [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
+
+## Project Structure
+
+```
+src/
+  components/
+    HeroSection.jsx
+    Navbar.jsx
+    Footer.jsx
+    Stories.jsx
+    InitiativeFor.jsx
+    LiveSessions.jsx
+    OrbitIconsWithCaptions.jsx
+    OrbitShowcase.jsx
+    Layout.jsx
+  pages/
+    Home.jsx
+  App.jsx
+  main.jsx
+  index.css
+```
+
+## Customization
+
+- **Add/Edit Sections:** Modify or add components in `src/components/`.
+- **Change Routes:** Edit `src/App.jsx` to add or remove routes.
+- **Styling:** Uses Tailwind CSS. Edit `index.css` or use Tailwind utility classes.
+
+## Dependencies
+
+- React
+- React Router DOM
+- Framer Motion
+- Tailwind CSS
+- Lucide React (icons)
+
+## License
+
+MIT
+
+---
+
+Made with ❤️ for Building Bharat.

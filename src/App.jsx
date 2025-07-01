@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import OrbitShowcase from './components/OrbitShowcase.jsx'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import HeroSection from './components/HeroSection'
@@ -15,14 +14,12 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="hero" element={<HeroSection />} />
-        <Route path="stories" element={<Stories />} />
-        <Route path="initiative-for" element={<InitiativeFor />} />
-        <Route path="live-sessions" element={<LiveSessions />} />
-        {/* Optionally, routes for Navbar and Footer for direct view */}
-        <Route path="navbar" element={<Navbar />} />
-        <Route path="footer" element={<Footer />} />
-        {/* Add more routes here as needed */}
+        <Route path="courses" element={<div>Courses Page</div>} />
+        <Route path="college" element={<div>For College Page</div>} />
+        <Route path="internships" element={<div>Internships Page</div>} />
+        <Route path="blogs" element={<div>Blogs Page</div>} />
+        <Route path="start" element={<div>Start Learning Page</div>} />
+        
       </Route>
     </Routes>
   )

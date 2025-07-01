@@ -1,11 +1,11 @@
-const priyaImg = "https://randomuser.me/api/portraits/women/68.jpg";
+const priyaImg = "https://tse4.mm.bing.net/th/id/OIP.OaeB3Vv2nrTo_N8p8FCkYgHaI7?rs=1&pid=ImgDetMain&o=7&rm=3";
 
 export default function Stories() {
   return (
     <section className="bg-[#F8F9FA] py-16 px-4">
       <div className="max-w-5xl mx-auto">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12 tracking-tight">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-green-900 mb-12 tracking-tight">
           Stories That Inspire
         </h2>
 
