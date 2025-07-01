@@ -34,11 +34,11 @@ export default function LiveSessions() {
             </div>
 
             {/* Description with aligned icon */}
-<p className="text-gray-700 text-base leading-relaxed mb-8 text-left px-5">           Learn directly from policy experts, former MPs, senior bureaucrats, and successful political consultants through live, interactive sessions that simulate real-world scenarios.
+<p className="text-gray-700 text-base leading-relaxed mb-8 text-left px-3">           Learn directly from policy experts, former MPs, senior bureaucrats, and successful political consultants through live, interactive sessions that simulate real-world scenarios.
             </p>
 
             {/* Bullet List */}
-            <ul className="space-y-3 text-green-800 text-sm sm:text-base">
+            <ul className="space-y-3 text-sm sm:text-base">
               {[
                 "Weekly live sessions with industry experts",
                 "Q&A sessions with former parliamentarians",
@@ -50,7 +50,7 @@ export default function LiveSessions() {
                       <path stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M5 10.5l3.5 3.5 6-7"/>
                     </svg>
                   </span>
-                  <span>{point}</span>
+                  <span className="text-gray-700">{point}</span>
                 </li>
               ))}
             </ul>

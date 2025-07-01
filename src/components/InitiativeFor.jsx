@@ -30,7 +30,7 @@ export default function InitiativeFor() {
         <h2 className=" text-green-900 text-2xl md:text-3xl font-bold text-center mb-5">
           Who is this Initiative For?
         </h2>
-        <p>perfect for Aspiring Political and Policy professionals from all Backgrounds</p>
+        <p className='text-gray-600 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4'>perfect for Aspiring Political and Policy professionals from all Backgrounds</p>
         <br />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {cards.map((c, i) => (

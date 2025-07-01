@@ -1,9 +1,9 @@
-const priyaImg = "https://tse4.mm.bing.net/th/id/OIP.OaeB3Vv2nrTo_N8p8FCkYgHaI7?rs=1&pid=ImgDetMain&o=7&rm=3";
+const priyaImg = "https://randomuser.me/api/portraits/women/68.jpg";
 
 export default function Stories() {
   return (
-    <section className="bg-[#F8F9FA] py-16 px-4">
-      <div className="max-w-5xl mx-auto">
+    <section className="bg-[#F8F9FA] py-16 px-4 w-full">
+      <div className="w-full max-w-7xl mx-auto">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-green-900 mb-12 tracking-tight">
           Stories That Inspire
@@ -23,7 +23,7 @@ export default function Stories() {
               I never imagined I’d lead initiatives in my own town while learning from top mentors across India. The journey wasn’t easy, but the Building Bharat team made it achievable—every step, every doubt, every win was celebrated. If you're serious about growing and giving back to India, this is where you start.
             </p>
             <div>
-              <p className="text-orange-700 text-base leading-relaxed  text-left px-5">Priya Sharma</p>
+              <p className="text-orange-700 text-lg font-bold leading-relaxed  text-left px-5">Priya Sharma</p>
               <p className="text-black-700 leading-relaxed mb-8 text-left px-5 text-sm">Student Leader, Nagpur</p>
             </div>
           </div>
