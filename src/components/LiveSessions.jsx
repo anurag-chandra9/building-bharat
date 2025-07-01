@@ -1,25 +1,73 @@
-const sessionImg = "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" // Replace with your image path or use a placeholder
+import { Users } from "lucide-react";
+
+const sessionImg = "/path-to-your-uploaded-image.jpeg"; // Replace with actual image path
 
 export default function LiveSessions() {
   return (
-    <section className="py-12 px-4 bg-white">
-      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-        <div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Live Interactive Sessions</h2>
-          <ul className="list-disc pl-5 text-gray-700 space-y-2">
-            <li>Weekly live sessions with industry experts</li>
-            <li>Q&amp;A sessions with former parliamentarians</li>
-            <li>Interactive policy workshops</li>
-          </ul>
+    <section className="py-16 px-4 sm:px-6 md:px-10 lg:px-16 bg-white">
+      <div className="max-w-7xl mx-auto flex flex-col gap-14">
+        {/* Heading Section */}
+        <div className="text-center px-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-900 mb-2 leading-snug">
+            Why Building Bharat Is Different
+          </h2>
+          <p className="text-gray-600 text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
+            Experience the most comprehensive political and policy education platform
+          </p>
         </div>
-        <div>
-          <img
-            src={sessionImg}
-            alt="Live session"
-            className="rounded-xl shadow-md w-full object-cover"
-          />
+
+        {/* Content Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          {/* Left: Text Content */}
+          <div className="space-y-6">
+            {/* Heading with icon */}
+            <div className="flex items-start gap-3">
+              <div className="mt-1 shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-green-600">
+                  <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/>
+                  <rect x="2" y="6" width="14" height="12" rx="2"/>
+                </svg>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-semibold text-green-800">
+                Live Interactive Sessions
+              </h3>
+            </div>
+
+            {/* Description with aligned icon */}
+            <p className="text-gray-700 text-base leading-relaxed mb-8 text-left px-5">
+  Learn directly from policy experts, former MPs, senior bureaucrats, and successful political consultants through live, interactive sessions that simulate real-world scenarios.
+</p>
+
+
+            {/* Bullet List */}
+            <ul className="space-y-3 text-green-800 text-sm sm:text-base">
+              {[
+                "Weekly live sessions with industry experts",
+                "Q&A sessions with former parliamentarians",
+                "Interactive policy workshops",
+              ].map((point, idx) => (
+                <li key={idx} className="flex items-start gap-2">
+                  <span className="mt-1">
+                    <svg width="18" height="18" fill="none" className="text-green-500" viewBox="0 0 20 20">
+                      <path stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M5 10.5l3.5 3.5 6-7"/>
+                    </svg>
+                  </span>
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Right: Image */}
+          <div className="flex justify-center">
+            <img
+              src={sessionImg}
+              alt="Live session"
+              className="rounded-2xl shadow-xl w-full max-w-md sm:max-w-sm md:max-w-md lg:max-w-lg object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
