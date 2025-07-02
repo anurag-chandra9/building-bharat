@@ -89,7 +89,6 @@ export default function Navbar() {
           {open ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
-      {/* Mobile menu */}
       {open && (
         <div className="md:hidden bg-white border-t">
           <div className="flex flex-col gap-2 px-4 py-2">

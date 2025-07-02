@@ -6,7 +6,6 @@ export default function LiveSessions() {
   return (
     <section className="py-16 px-4 sm:px-6 md:px-10 lg:px-16 bg-white">
       <div className="max-w-7xl mx-auto flex flex-col gap-14">
-        {/* Heading Section */}
         <div className="text-center px-2">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-900 mb-2 leading-snug">
             Why Building Bharat Is Different
@@ -16,11 +15,8 @@ export default function LiveSessions() {
           </p>
         </div>
 
-        {/* Content Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          {/* Left: Text Content */}
           <div className="space-y-6">
-            {/* Heading with icon */}
             <div className="flex items-start gap-3">
               <div className="mt-1 shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-green-600">
@@ -33,11 +29,9 @@ export default function LiveSessions() {
               </h3>
             </div>
 
-            {/* Description with aligned icon */}
 <p className="text-gray-700 text-base leading-relaxed mb-8 text-left px-3">           Learn directly from policy experts, former MPs, senior bureaucrats, and successful political consultants through live, interactive sessions that simulate real-world scenarios.
             </p>
 
-            {/* Bullet List */}
             <ul className="space-y-3 text-sm sm:text-base">
               {[
                 "Weekly live sessions with industry experts",
@@ -56,7 +50,6 @@ export default function LiveSessions() {
             </ul>
           </div>
 
-          {/* Right: Image */}
           <div className="flex justify-center">
             <img
               src={sessionImg}

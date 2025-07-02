@@ -4,14 +4,12 @@ export default function Stories() {
   return (
     <section className="bg-[#F8F9FA] py-16 px-4 w-full">
       <div className="w-full max-w-7xl mx-auto">
-        {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-green-900 mb-12 tracking-tight">
           Stories That Inspire
         </h2>
 
         
         <div className="bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col md:flex-row  md:items-stretch p-0 overflow-hidden">
-          {/* Left: Text Content */}
           <div className="md:w-2/3 w-full flex flex-col  px-2 py-10">
            <h3 className="text-2xl md:text-2xl font-semibold px-5 mb-4 text-gray-900 text-left">
   Student to Social Impact Leader
@@ -27,7 +25,6 @@ export default function Stories() {
               <p className="text-black-700 leading-relaxed mb-8 text-left px-5 text-sm">Student Leader, Nagpur</p>
             </div>
           </div>
-          {/* Right: Image */}
           <div className="md:w-1/3 w-full flex items-center justify-center bg-[#F3F4F6] p-8">
             <img
               src={priyaImg}
